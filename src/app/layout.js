@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Providers from "./Providers";
+import NavBar from "@/components/NavBar";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         className={inter.className}>
         <Providers>
           <Header />
+          <NavBar/>
           {children}
         </Providers>
       </body>
