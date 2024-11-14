@@ -19,24 +19,25 @@ export default async function Home({ searchParams }) {
   const results = data.results;
   console.log(results);
 
-  // return (
-  //   <div >
-  //     {results.map((result) => (
-  //       <Results results={results} />
-  //     ))}
-  //   </div>
-  // );
   return (
     <div >
-      {results.length === 0 ? (
-        <p>No results found</p>  
-      ) : (
-        results.map((result) => (
-          <Card key={result.id} result={result} />
-        ))
-      )}
+      {results.map((result) => (
+        <Results results={results} />
+      ))}
     </div>
   );
-  
+
+  // return (
+  //   <div >
+  //     {results.length === 0 ? (
+  //       <p>No results found</p>  
+  //     ) : (
+  //       results.map((result) => (
+  //         <Card key={result.id} result={result} />
+  //       ))
+  //     )}
+  //   </div>
+  // );
+
 
 }
