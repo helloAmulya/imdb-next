@@ -27,18 +27,4 @@ export default async function Home({ searchParams }) {
     </div>
   );
 
-
-  // return (
-  //   <div >
-  //     {results.length === 0 ? (
-  //       <p>No results found</p>  
-  //     ) : (
-  //       results.map((result) => (
-  //         <Card key={result.id} result={result} />
-  //       ))
-  //     )}
-  //   </div>
-  // );
-
-
 }
