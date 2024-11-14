@@ -1,13 +1,15 @@
 
 import React from 'react'
 import { resolve } from 'styled-jsx/css';
+import Results from '@/components/Results';
+import Card from '@/components/Card';
 const API_KEY = process.env.API_KEY;
 
 export default async function Home({ searchParams }) {
   const genre = searchParams.genre || 'fetchTrending';
   const res = await fetch(
     `http://api.themoviedb.org/3${genre === 'fetchTopRated' ? '/movie/top_rated' : '/trending/all/week'}?api_key=${API_KEY}&language=en-US&page=1`,
-    { next: { revalidate: 10000} }
+    { next: { revalidate: 10000 } }
   );
 
   const data = await res.json();
@@ -17,16 +19,24 @@ export default async function Home({ searchParams }) {
   const results = data.results;
   console.log(results);
 
+  // return (
+  //   <div >
+  //     {results.map((result) => (
+  //       <Results results={results} />
+  //     ))}
+  //   </div>
+  // );
   return (
-    <div>
-      {
+    <div >
+      {results.length === 0 ? (
+        <p>No results found</p>  
+      ) : (
         results.map((result) => (
-          <div key={result.id}>
-            <h2>{result.original_title}</h2>
-          </div>
+          <Card key={result.id} result={result} />
         ))
-      }
+      )}
     </div>
   );
+  
 
 }
