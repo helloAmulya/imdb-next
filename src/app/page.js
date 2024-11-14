@@ -26,6 +26,7 @@ export default async function Home({ searchParams }) {
       ))}
     </div>
   );
+  
 
   // return (
   //   <div >
