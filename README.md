@@ -26,9 +26,8 @@ An IMDb-like movie database application powered by TMDB API, built using **Next.
 ### Search Movie:  
 ![Search Movie](images/SearchMovie.png)  
 
-
 ## 🚀 How to Run:  
 1. Clone the repository:  
    ```bash  
    git clone https://github.com/helloAmulya/imdb-clone.git  
-   cd imdb-clone  
+   cd imdb-clone
