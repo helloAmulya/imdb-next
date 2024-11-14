@@ -31,3 +31,22 @@ An IMDb-like movie database application powered by TMDB API, built using **Next.
    ```bash  
    git clone https://github.com/helloAmulya/imdb-clone.git  
    cd imdb-clone
+
+2. Install dependencies:
+   ```bash
+   npm install
+   
+4. Run the development server:
+   ```bash
+   npm run dev
+   
+6. Open your browser and visit http://localhost:3000 to view the application
+ 
+##🔧 Future Enhancements:
+Add user authentication (login/signup).
+Implement user movie ratings and reviews.
+Enhance UI/UX design with animations and transitions.
+
+Feel free to explore the code and contribute to the project. If you have any questions or suggestions, don't hesitate to open an issue or make a pull request.
+
+<!-- Created by Amulya Ratna Sharma -->
