@@ -43,10 +43,12 @@ An IMDb-like movie database application powered by TMDB API, built using **Next.
 6. Open your browser and visit http://localhost:3000 to view the application
  
 ## 🔧 Future Enhancements:
-Add user authentication (login/signup).
-Implement user movie ratings and reviews.
-Enhance UI/UX design with animations and transitions.
+- Add user authentication (login/signup).
+- Implement user movie ratings and reviews.
+- Enhance UI/UX design with animations and transitions.
 
+## 🤝 Contribute:
 Feel free to explore the code and contribute to the project. If you have any questions or suggestions, don't hesitate to open an issue or make a pull request.
 
 <!-- Created by Amulya Ratna Sharma -->
+
